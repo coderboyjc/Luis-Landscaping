@@ -6,11 +6,14 @@ const Hero: React.FC = () => {
     <div id="home" className="relative pt-32 pb-20 md:pt-32 md:pb-24 flex items-center min-h-[100dvh] md:min-h-[85vh] bg-white overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://picsum.photos/1920/1080?grayscale&blur=2" 
-          alt="Beautiful landscaped lawn in Maryland" 
-          className="w-full h-full object-cover"
-        />
+        <picture>
+          <source media="(min-width: 768px)" srcSet="/images/pexels-pixabay-280222.jpg" />
+          <img
+            src="/images/pexels-maksgelatin-4596639.jpg"
+            alt="Beautiful landscaped lawn in Maryland"
+            className="w-full h-full object-cover"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-green-800/70"></div>
       </div>
 
@@ -20,11 +23,11 @@ const Hero: React.FC = () => {
             <span className="flex h-2 w-2 rounded-full bg-green-400 mr-2"></span>
             Now booking for Spring Cleanup
           </div>
-          
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
             Transform Your Yard Into a <span className="text-green-400">Maryland Masterpiece</span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl leading-relaxed">
             Reliable, professional, and licensed landscaping services for residential and commercial properties. Serving Montgomery, Howard, and Prince George's counties.
           </p>

@@ -7,17 +7,16 @@ import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import AIQuoteAssistant from './components/AIQuoteAssistant';
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 selection:bg-brand-200">
       <Navbar />
-      
+
       <main>
         <Hero />
         <Services />
-        
+
         {/* Why Choose Us / Trust Section */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +58,7 @@ const App: React.FC = () => {
                 <p className="text-lg text-gray-600 mb-8">
                   Contact us today for a free estimate. Whether it's a simple mow or a complete patio redesign, we're here to help.
                 </p>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start p-4 bg-white rounded-lg shadow-sm">
                     <div className="flex-shrink-0">
@@ -67,7 +66,7 @@ const App: React.FC = () => {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-bold text-gray-900">Request a Quote</h4>
-                      <p className="text-gray-600">Fill out the form or use our AI assistant to get a rough estimate.</p>
+                      <p className="text-gray-600">Fill out the form to get a rough estimate.</p>
                     </div>
                   </div>
                   <div className="flex items-start p-4 bg-white rounded-lg shadow-sm">
@@ -90,7 +89,7 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="lg:mt-0">
                 <ContactForm />
               </div>
@@ -100,7 +99,6 @@ const App: React.FC = () => {
       </main>
 
       <Footer />
-      <AIQuoteAssistant />
     </div>
   );
 };

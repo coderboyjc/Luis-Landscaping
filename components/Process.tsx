@@ -5,7 +5,7 @@ const steps = [
   {
     number: '01',
     title: 'Request a Quote',
-    description: 'Fill out our simple online form or chat with our AI assistant to get a rough estimate in minutes.',
+    description: 'Fill out our simple online form to get a rough estimate in minutes.',
     icon: <MessageSquare className="w-8 h-8 text-white" />
   },
   {
@@ -39,22 +39,22 @@ const Process: React.FC = () => {
             <div key={index} className="relative flex flex-col items-center text-center group">
               <div className="w-24 h-24 bg-brand-600 rounded-2xl rotate-3 flex items-center justify-center shadow-lg mb-8 group-hover:rotate-6 transition-transform duration-300 border-4 border-white ring-1 ring-gray-100">
                 <div className="-rotate-3 group-hover:-rotate-6 transition-transform duration-300">
-                    {step.icon}
+                  {step.icon}
                 </div>
               </div>
-              
+
               <div className="px-4">
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h4>
-                  <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h4>
+                <p className="text-gray-600 leading-relaxed">{step.description}</p>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="mt-16 text-center">
-             <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-brand-600 hover:bg-brand-700 md:py-4 md:text-lg md:px-10 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                Start Your Project Now
-             </a>
+          <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-brand-600 hover:bg-brand-700 md:py-4 md:text-lg md:px-10 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            Start Your Project Now
+          </a>
         </div>
       </div>
     </section>

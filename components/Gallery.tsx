@@ -1,12 +1,12 @@
 import React from 'react';
 
 const projects = [
-  { id: 1, title: "Paver Patio in Bethesda", img: "https://picsum.photos/600/400?random=1" },
-  { id: 2, title: "Lawn Renovation in Silver Spring", img: "https://picsum.photos/600/400?random=2" },
-  { id: 3, title: "Retaining Wall in Rockville", img: "https://picsum.photos/600/400?random=3" },
-  { id: 4, title: "Garden Design in Columbia", img: "https://picsum.photos/600/400?random=4" },
-  { id: 5, title: "Spring Cleanup in Hyattsville", img: "https://picsum.photos/600/400?random=5" },
-  { id: 6, title: "Walkway Installation in Laurel", img: "https://picsum.photos/600/400?random=6" },
+  { id: 1, title: "Paver Patio in Bethesda", img: "/images/pexels-pixabay-280222.jpg" },
+  { id: 2, title: "Lawn Renovation in Silver Spring", img: "/images/pexels-artbovich-8082319.jpg" },
+  { id: 3, title: "Retaining Wall in Rockville", img: "/images/pexels-artbovich-8143668.jpg" },
+  { id: 4, title: "Garden Design in Columbia", img: "/images/pexels-artbovich-7174103.jpg" },
+  { id: 5, title: "Spring Cleanup in Hyattsville", img: "/images/pexels-makrufinmuhammad-9029162.jpg" },
+  { id: 6, title: "Walkway Installation in Laurel", img: "/images/pexels-robertkso-12243105.jpg" },
 ];
 
 const Gallery: React.FC = () => {
@@ -26,9 +26,9 @@ const Gallery: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div key={project.id} className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
-              <img 
-                src={project.img} 
-                alt={project.title} 
+              <img
+                src={project.img}
+                alt={project.title}
                 className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
